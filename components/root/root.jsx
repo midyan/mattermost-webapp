@@ -94,7 +94,7 @@ export default class Root extends React.Component {
         super(props);
 
         // Redux
-        setUrl(getSiteURL());
+        setUrl(process.env.CONNECT_API_URL);
 
         setSystemEmojis(EmojiIndicesByAlias);
 
